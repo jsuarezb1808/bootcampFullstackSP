@@ -61,6 +61,7 @@ public class Challenge1 {
     return exists;
     }
     
+    //random funtion to add numers on point 1
     int randomNumber(int minimum,int maximum){
         
         //minimum and maximum value
