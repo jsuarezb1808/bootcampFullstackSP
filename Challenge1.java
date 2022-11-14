@@ -5,7 +5,6 @@
  */
 package javaBasico;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
@@ -50,7 +49,7 @@ public class Challenge1 {
     boolean secondpoint(String word,List<String> existingwords){
     //List<String> existingwords = new ArrayList<String>();
     
-    //booleas to check if the word exists, if it does =false
+    //boolean to check if the word exists, if it does =false
     boolean exists=true;
     //checks every position of the list to change exists status if required
         for (int i = 0; i < existingwords.size(); i++) {
@@ -58,11 +57,7 @@ public class Challenge1 {
                exists=false;
             }
         }
-        if (exists) {
-            System.out.println("true");
-        }else{
-            System.out.println("false");
-        }
+    //returns the result 
     return exists;
     }
     
