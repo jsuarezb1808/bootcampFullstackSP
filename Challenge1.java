@@ -8,12 +8,12 @@ package javaBasico;
 import java.util.Scanner;
 import java.util.List;
 
-public class Challenge1(String Word_type) {
+public class Challenge1() {
     Scanner sc=new Scanner(System.in);
     
     
     
-    String firstpoint(){
+    String firstpoint(String Word_type){
         //initialize word var
         String word=null;
         String random_secuence="";
