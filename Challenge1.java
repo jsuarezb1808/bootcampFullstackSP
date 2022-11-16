@@ -8,7 +8,7 @@ package javaBasico;
 import java.util.Scanner;
 import java.util.List;
 
-public class Challenge1 {
+public class Challenge1(String Word_type) {
     Scanner sc=new Scanner(System.in);
     
     
@@ -16,26 +16,21 @@ public class Challenge1 {
     String firstpoint(){
         //initialize word var
         String word=null;
-        
-        //gets a value from user
-        String Word_type=sc.nextLine();
-        
+        String random_secuence="";
+                       
+        for (int i = 0; i < 8; i++) {
+            random_secuence=random_secuence+randomNumber(0, 9);
+        }
         //evaluates value from user
         switch (Word_type) {
             case "Tipo A":
                 //adds random numbers to var word using a method called random
                 word="54";
-                
-                for (int i = 0; i < 8; i++) {
-                    word=word+randomNumber(0, 9);
-                }
+                word=word+random_secuence;
                 break;
             case "Tipo B":
                 word="08";
-                
-                for (int i = 0; i < 8; i++) {
-                    word=word+randomNumber(0, 9);
-                }
+                word=word+random_secuence;
                 break;
             default:
                 break;
